@@ -46,7 +46,7 @@ body {
 
 /* ------- Main Acquisitions -------- */
 
-.main-acquisition-div{
+.main-acquisition{
  border: solid pink;
  display: flex;
 }
@@ -84,4 +84,27 @@ body {
 .main-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
+}
+
+
+/* ------ Main About ------- */
+
+.main-about{
+  border: solid green;
+  display: flex;
+}
+
+.main-about-text{
+  border: solid pink;
+  width: 55vw;
+}
+
+.main-about-underline{
+  border: solid blue;
+  width: 50px;
+  height: 6px;
+}
+
+.main-about-image{
+  width: 45vw;
 }
