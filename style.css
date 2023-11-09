@@ -1,0 +1,44 @@
+/* width is at 1440 for figma */
+
+body {
+ margin: 0;
+}
+
+/* ------ Header Nav Item ------- */
+.header-nav{
+ border: solid red;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.header-nav-logo{
+ border: solid blue;
+}
+
+.header-nav-menu{
+ display: flex;
+ flex-direction: row;
+ border: solid green;
+}
+
+.nav-item{
+ padding: 10px 20px;
+}
+
+/* ------ Header Hero ------ */
+
+
+.header-hero{
+  border: solid green;
+  display: flex;  
+}
+
+.header-hero-text{
+  width: 50%;
+}
+
+.header-hero-image{
+  border: solid blue;
+  width: 50%;
+}
