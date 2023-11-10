@@ -79,6 +79,7 @@ body {
   border: solid purple;
   width: 50vw;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-testimonial-quote-reference{
@@ -131,12 +132,49 @@ body {
 }
 
 .main-services-button{
- border: solid sandybrown;
- display: flex;
+  border: solid sandybrown;
+  display: flex;
 }
 
 .main-services-description-container{
   width: 60vw;
   border: solid brown;
+  text-align: center;
+}
+
+.main-services-description{
+  border: solid orange;
+}
+
+
+/* ----- Main Locations ------ */
+
+.main-locations{
+  border: solid red;
+}
+
+
+
+/* -------- Footer Testimonial --------- */
+
+.footer-testimonial{
+  border: solid orange;
+}
+
+.footer-testimonial-stars{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.footer-testimonial-quote{
+  border: solid purple;
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-testimonial-quote-reference{
+  border: solid yellow;
   text-align: center;
 }
