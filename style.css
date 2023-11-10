@@ -108,3 +108,35 @@ body {
 .main-about-image{
   width: 45vw;
 }
+
+
+/* ----- Main Services ------ */
+
+.main-services{
+  border: solid aqua;
+}
+
+.main-services-title{
+  border: solid red;
+  text-align: center;
+}
+
+.main-services-content{
+  border: solid blue;
+  display: flex;
+}
+
+.main-services-button-container{
+  width: 40vw;
+}
+
+.main-services-button{
+ border: solid sandybrown;
+ display: flex;
+}
+
+.main-services-description-container{
+  width: 60vw;
+  border: solid brown;
+  text-align: center;
+}
