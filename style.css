@@ -1,15 +1,20 @@
 /* width is at 1440 for figma */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root
 {
   --black: #4d4d4d;
-  --white: #f7f7f7;
-  --lightBlue: #c1d6db;
+  --white: #ffffff;
+  --blue: #032682;
+  --lightBlue: #BCCDFB;
+  --lightBlueBackground: #FBFCFF;
   --transition: all 0.25s ease-in-out;
 }
 
 body {
  margin: 0;
+ font-family: 'Montserrat', sans-serif;
 }
 
 .max-width{
@@ -37,6 +42,11 @@ body {
  width: 100%;
 }
 
+.header-header img{
+  height: 50px;
+  margin-left: 40px;
+}
+
 .header-nav-menu{
  position: absolute;
  top: 50px;
@@ -58,24 +68,30 @@ body {
 .nav-item{
  padding: 10px 20px;
  opacity: 1;
- background-color: var(--lightBlue);
+ background-color: var(--lightBlueBackground);
  display: flex; 
  align-items: center;
  justify-content: center;
+}
+
+.nav-item-a{
+  text-decoration: none;
+  color: var(--black);
 }
 
 
 /* ---- Hambuger ------- */ 
 
 .hamburger{
- border: solid gold;
+ /* border: solid gold; */
+ margin-right: 20px;
 }
 
 .hamburger span{
   display: block;
-  width: 50px;
+  width: 40px;
   height: 3px;
-  background-color: green;
+  background-color: var(--blue);
   margin: 8px 0px;
   transition: var(--transition);
 }
@@ -103,11 +119,21 @@ body {
   border: solid green;
   display: flex;  
   flex-direction: column;
-  background-color: var(--lightBlue);
+  background-color: var(--lightBlueBackground);
 }
 
 .header-hero-text{
   width: 100%;
+  padding: 40px;
+}
+
+.header-hero-text h2{
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.header-hero-text h3{
+  font-weight: 800;
 }
 
 .header-hero-image{
@@ -135,6 +161,10 @@ body {
 .main-acquisition-text{
  border: solid blue;
  width: 100%;
+}
+
+.main-acquisition-text h3{
+  color: var(--blue);
 }
 
 
@@ -166,7 +196,7 @@ body {
 /* ------ Main About ------- */
 
 .main-about-background{
- background-color: var(--lightBlue);
+ background-color: var(--lightBlueBackground);
 }
 
 .main-about{
@@ -181,10 +211,14 @@ body {
   width: 100%;
 }
 
+.main-about-text h3{
+  color: var(--blue);
+}
+
 .main-about-underline{
-  border: solid blue;
   width: 50px;
   height: 6px;
+  background-color: var(--lightBlue);
 }
 
 .main-about-image{
@@ -201,6 +235,10 @@ body {
 .main-services-title{
   border: solid red;
   text-align: center;
+}
+
+.main-services-title h3{
+  color: var(--blue);
 }
 
 .main-services-content{
@@ -273,6 +311,10 @@ body {
   text-align: center;
 }
 
+.footer-blog-title h3{
+  color: var(--blue);
+}
+
 .footer-all-blog-container{
   border: solid red;
   display: flex;
@@ -291,6 +333,11 @@ body {
   text-align: center;
 }
 
+.footer-contact h3{
+  color: var(--blue);
+}
+
+
 
 /* ----- Footer ------ */
 
@@ -307,7 +354,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--lightBlue);
+  background-color: var(--lightBlueBackground);
+}
+
+.footer-info-top h3{
+ color: var(--blue);
 }
 
 .footer-info-bottom{
@@ -319,7 +370,7 @@ body {
 
 /* ----- Media queries ----- */
 
-@media all and (min-width: 520px) {
+@media all and (min-width: 700px) {
 
   .header-hero{
     flex-direction: row; 
