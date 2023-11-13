@@ -12,6 +12,11 @@ body {
  margin: 0;
 }
 
+.max-width{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ------ Header Nav Item ------- */
 .header-nav{
  display: flex;
@@ -159,6 +164,10 @@ body {
 
 /* ------ Main About ------- */
 
+.main-about-background{
+ background-color: var(--lightBlue);
+}
+
 .main-about{
   border: solid green;
   display: flex;
@@ -277,6 +286,10 @@ body {
 
 /* ----- Contact Us ----- */
 
+.footer-contact{
+  text-align: center;
+}
+
 
 /* ----- Footer ------ */
 
@@ -290,6 +303,10 @@ body {
 
 .footer-info-top{
   border: solid green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--lightBlue);
 }
 
 .footer-info-bottom{
@@ -371,8 +388,6 @@ body {
     width: 100%;
   }
   
-
-
 }
 
 @media all and (min-width: 770px) {
