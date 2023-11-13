@@ -14,7 +14,6 @@ body {
 
 /* ------ Header Nav Item ------- */
 .header-nav{
- border: solid red;
  display: flex;
  position: fixed;
  top: 0;
@@ -96,18 +95,18 @@ body {
 
 .header-hero{
   padding-top: 50px; 
-
   border: solid green;
   display: flex;  
+  flex-direction: column;
 }
 
 .header-hero-text{
-  width: 50vw;
+  width: 100%;
 }
 
 .header-hero-image{
   border: solid blue;
-  width: 50vw;
+  width: 100%;
 }
 
 
@@ -117,18 +116,19 @@ body {
 .main-acquisition{
  border: solid pink;
  display: flex;
+ flex-direction: column;
 }
 
 .main-acquisition-logo-pair{
   border: solid green;
   display: flex;
   justify-content: space-around;
-  width: 50vw;
+  width: 100%;
 }
 
 .main-acquisition-text{
  border: solid blue;
- width: 50vw;
+ width: 100%;
 }
 
 
@@ -162,11 +162,13 @@ body {
 .main-about{
   border: solid green;
   display: flex;
+  flex-direction: column;
+
 }
 
 .main-about-text{
   border: solid pink;
-  width: 55vw;
+  width: 100%;
 }
 
 .main-about-underline{
@@ -176,7 +178,7 @@ body {
 }
 
 .main-about-image{
-  width: 45vw;
+  width: 100%;
 }
 
 
@@ -194,10 +196,11 @@ body {
 .main-services-content{
   border: solid blue;
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .main-services-button-container{
-  width: 40vw;
+  width: 100%;
 }
 
 .main-services-button{
@@ -206,7 +209,7 @@ body {
 }
 
 .main-services-description-container{
-  width: 60vw;
+  width: 100%;
   border: solid brown;
   text-align: center;
 }
@@ -249,7 +252,61 @@ body {
 }
 
 
+/* ----- Media queries ----- */
 
+@media all and (min-width: 520px) {
+
+  .header-hero{
+    flex-direction: row; 
+  }
+
+  .header-hero-text{
+    width: 50vw;
+  }
+
+  .header-hero-image{
+    width: 50vw;
+  }
+
+  .main-acquisition{
+    flex-direction: row;
+   }
+   
+   .main-acquisition-logo-pair{
+     width: 50vw;
+   }
+   
+   .main-acquisition-text{
+    width: 50vw;
+   }
+
+   .main-about{
+    flex-direction: row;
+  }
+  
+  .main-about-text{
+    width: 55vw;
+  }
+  
+  .main-about-image{
+    width: 45vw;
+  }
+
+
+  .main-services-content{
+    flex-direction: row;
+  }
+
+  .main-services-button-container{
+    width: 40vw;
+  }
+
+  .main-services-description-container{
+    width: 60vw;
+  }
+
+
+}
 
 @media all and (min-width: 770px) {
 
