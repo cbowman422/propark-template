@@ -275,6 +275,29 @@ body {
   min-width: 250px;
 }
 
+/* ----- Contact Us ----- */
+
+
+/* ----- Footer ------ */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: solid red;
+}
+
+.footer-info-top{
+  border: solid green;
+}
+
+.footer-info-bottom{
+  border: solid orange;
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* ----- Media queries ----- */
 
@@ -336,6 +359,18 @@ body {
   .footer-testimonial-quote{
     width: 50vw;
   }
+
+  .footer-info-top{
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-info-bottom{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
 
 
 }
