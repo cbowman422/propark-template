@@ -3,11 +3,10 @@
 :root
 {
   --black: #4d4d4d;
-  --white: #e7e7e7;
+  --white: #f7f7f7;
+  --lightBlue: #c1d6db;
   --transition: all 0.25s ease-in-out;
 }
-
-
 
 body {
  margin: 0;
@@ -22,11 +21,10 @@ body {
  height: 50px;
  width: 100%;
  z-index: 4;
- background-color: white;
+ background-color: var(--white);
 }
 
 .header-header{
- border: solid blue;
  position: relative;
  display: flex;
  flex-direction: row;
@@ -36,7 +34,6 @@ body {
 }
 
 .header-nav-menu{
- border: solid green;
  position: absolute;
  top: 50px;
  height: 0px;
@@ -48,7 +45,6 @@ body {
  transition-timing-function: linear;
  display: flex;
  flex-direction: column;
-
 }
 
 .header-nav-menu.active{
@@ -57,10 +53,13 @@ body {
 
 .nav-item{
  padding: 10px 20px;
- text-align: center;
  opacity: 1;
- background-color: white;
+ background-color: var(--lightBlue);
+ display: flex; 
+ align-items: center;
+ justify-content: center;
 }
+
 
 /* ---- Hambuger ------- */ 
 
@@ -112,6 +111,7 @@ body {
 }
 
 
+
 /* ------- Main Acquisitions -------- */
 
 .main-acquisition{
@@ -130,6 +130,7 @@ body {
  border: solid blue;
  width: 50vw;
 }
+
 
 /* -------- Main Testimonial --------- */
 
@@ -245,4 +246,33 @@ body {
 .footer-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
+}
+
+
+
+
+@media all and (min-width: 770px) {
+
+  .header-nav-menu{
+    position: static;
+    height: auto;
+    overflow-y: visible;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-around;
+    transition-duration: 0s;
+   }
+
+   .nav-item{
+    background-color: var(--white);
+   }
+
+   .header-nav-menu.active{
+    height: 50px;
+  }
+  
+   .hamburger {
+    display: none;
+  }
+
 }
