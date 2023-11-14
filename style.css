@@ -4,10 +4,12 @@
 
 :root
 {
-  --black: #4d4d4d;
+  --black: #333333;
   --white: #ffffff;
   --blue: #032682;
+  --blueTransparent: rgba(3,38,130,0.8);
   --lightBlue: #BCCDFB;
+  --lightBlueTransparent: rgba(112,141,216,0.8);
   --lightBlueBackground: #FBFCFF;
   --transition: all 0.25s ease-in-out;
 }
@@ -44,7 +46,7 @@ body {
 
 .header-header img{
   height: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .header-nav-menu{
@@ -124,7 +126,7 @@ body {
 
 .header-hero-text{
   width: 100%;
-  padding: 40px;
+  padding: 20px;
 }
 
 .header-hero-text h2{
@@ -172,6 +174,9 @@ body {
 
 .main-testimonial{
   border: solid orange;
+  background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
+  background-size: cover;
+  background-position: center;
 }
 
 .main-testimonial-stars{
@@ -185,11 +190,13 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  color: var(--white);
 }
 
 .main-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
+  color: var(--white);
 }
 
 
@@ -223,7 +230,15 @@ body {
 
 .main-about-image{
   width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.main-about-image img{
+  margin: auto;
+  border-radius: 20px;
+}
+
 
 
 /* ----- Main Services ------ */
@@ -251,9 +266,25 @@ body {
   width: 100%;
 }
 
+.main-services-button-container img{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.main-services-button-container h3{
+ padding: 5px 0 5px 20px;
+}
+
 .main-services-button{
   border: solid sandybrown;
   display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-services-button h3{
+ color: var(--black);
 }
 
 .main-services-description-container{
@@ -264,6 +295,29 @@ body {
 
 .main-services-description{
   border: solid orange;
+  padding: 20px;
+}
+
+.main-services-description img{
+  border-radius: 100%;
+  height: 100px;
+  width: 100px
+}
+
+.main-services-description h3{
+  color: var(--black);
+}
+
+.main-services-description p{
+  color: var(--black);
+}
+
+.main-services-connect{
+  padding: 20px;
+}
+
+.main-services-connect h3{
+  margin: 0;
 }
 
 
@@ -279,6 +333,9 @@ body {
 
 .footer-testimonial{
   border: solid orange;
+  background-image: linear-gradient(var(--lightBlueTransparent),var(--lightBlueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-testimonial-stars{
@@ -292,11 +349,13 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  color: var(--white);
 }
 
 .footer-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
+  color: var(--white);
 }
 
 
@@ -370,7 +429,8 @@ body {
 
 /* ----- Media queries ----- */
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 800px) {
+
 
   .header-hero{
     flex-direction: row; 
@@ -378,6 +438,7 @@ body {
 
   .header-hero-text{
     width: 50vw;
+    padding: 40px;
   }
 
   .header-hero-image{
@@ -389,7 +450,7 @@ body {
    }
    
    .main-acquisition-logo-pair{
-     width: 50vw;
+     width: 50vw;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU
    }
    
    .main-acquisition-text{
@@ -439,10 +500,10 @@ body {
     justify-content: space-between;
     width: 100%;
   }
-  
-}
 
-@media all and (min-width: 770px) {
+  .header-header img{
+    margin-left: 40px;
+  }
 
   .header-nav-menu{
     position: static;
