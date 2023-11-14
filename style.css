@@ -217,12 +217,19 @@ body {
 
 .main-about-text h3{
   color: var(--blue);
+  padding: 20px;
+}
+
+.main-about-text p{
+  color: var(--black);
+  padding: 0 20px;
 }
 
 .main-about-underline{
   width: 50px;
   height: 6px;
   background-color: var(--lightBlue);
+  margin-left: 20px;
 }
 
 .main-about-image{
