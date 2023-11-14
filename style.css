@@ -54,7 +54,7 @@ body {
  top: 50px;
  height: 0px;
  overflow-y: hidden;
- background-color: rgba(44, 33, 67, 0.6);
+ background-color: var(--blueTransparent);
  width: 100%;
  transition-property: height;
  transition-duration: 0.5s;
@@ -126,7 +126,6 @@ body {
 
 .header-hero-text{
   width: 100%;
-  padding: 20px;
 }
 
 .header-hero-text h2{
@@ -157,6 +156,7 @@ body {
   border: solid green;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
@@ -165,9 +165,6 @@ body {
  width: 100%;
 }
 
-.main-acquisition-text h3{
-  color: var(--blue);
-}
 
 
 /* -------- Main Testimonial --------- */
@@ -450,7 +447,7 @@ body {
    }
    
    .main-acquisition-logo-pair{
-     width: 50vw;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU
+     width: 50vw;
    }
    
    .main-acquisition-text{
@@ -500,6 +497,7 @@ body {
     justify-content: space-between;
     width: 100%;
   }
+
 
   .header-header img{
     margin-left: 40px;
