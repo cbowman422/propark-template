@@ -12,7 +12,7 @@
   --lightBlueLink:#0865D2;
   --lightBlueFooter: #708DD8;
   --lightBlueTransparent: rgba(112,141,216,0.8);
-  --lightBlueBackground: #FBFCFF;
+  --lightBlueBackground: #ebeffb;
   --transition: all 0.25s ease-in-out;
 }
 
@@ -137,12 +137,14 @@ cursor: pointer;
 
 /* ------ Header Hero ------ */
 
+.header-hero-background{
+  background-color: var(--lightBlueBackground);
+}
 
 .header-hero{
   /* border: solid green; */
   display: flex;  
   flex-direction: column;
-  background-color: var(--lightBlueBackground);
 }
 
 .header-hero-text{
@@ -153,11 +155,13 @@ cursor: pointer;
   font-weight: 800;
   color: var(--blue);
   margin: 40px 20px 20px 20px;
+  font-size: 36px;
 }
 
 .header-hero-text h3{
   font-weight: 800;
   margin: 0 20px 40px 20px;
+  font-size: 26px;
 }
 
 .header-hero-image{
@@ -173,6 +177,7 @@ cursor: pointer;
  /* border: solid pink; */
  display: flex;
  flex-direction: column;
+ padding: 40px 0;
 }
 
 .main-acquisition-logo-pair{
@@ -213,7 +218,7 @@ cursor: pointer;
   background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
-  padding-bottom: 1px;
+  padding: 40px 0;
 }
 
 .main-testimonial-stars{
@@ -251,6 +256,7 @@ cursor: pointer;
 
 .main-about-background{
  background-color: var(--lightBlueBackground);
+ padding: 40px 0;
 }
 
 .main-about{
@@ -297,9 +303,9 @@ cursor: pointer;
 
 /* ----- Main Services ------ */
 
-/* .main-services{
-  border: solid aqua;
-} */
+.main-services{
+  padding: 0 0 40px 0;
+}
 
 .main-services-title{
   /* border: solid red; */
@@ -308,6 +314,7 @@ cursor: pointer;
 
 .main-services-title h3{
   color: var(--blue);
+  margin: 40px 0;
 }
 
 .main-services-content{
@@ -403,7 +410,7 @@ cursor: pointer;
   background-image: linear-gradient(var(--lightBlueTransparent),var(--lightBlueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
-  padding-bottom: 1px;
+  padding: 40px 0;
 }
 
 .footer-testimonial-stars{
@@ -439,10 +446,10 @@ cursor: pointer;
 
 
 /* ---- Footer Blogs ----- */
-/* 
+
 .footer-blog{
-  border: solid;
-} */
+  padding: 40px 0;
+}
 
 .footer-blog-title{
   text-align: center;
@@ -450,6 +457,7 @@ cursor: pointer;
 
 .footer-blog-title h3{
   color: var(--blue);
+  margin-bottom: 30px;
 }
 
 .footer-all-blog-container{
@@ -494,6 +502,7 @@ cursor: pointer;
 /* ----- Contact Us ----- */
 
 .footer-contact{
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -510,6 +519,7 @@ cursor: pointer;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 40px 0;
   /* border: solid red; */
 }
 
@@ -520,7 +530,7 @@ cursor: pointer;
   justify-content: center;
   background-color: var(--lightBlueBackground);
   flex-direction: column;
-  padding-bottom: 40px;
+  padding: 40px 0 80px 0;
 }
 
 .footer-info-top h3{
@@ -591,14 +601,20 @@ cursor: pointer;
 
   .header-hero-text{
     width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
   }
 
   .header-hero-text h2{
     margin: 40px 40px 20px 40px;
+    font-size: 40px;
   }
   
   .header-hero-text h3{
     margin: 0 40px 40px 40px;
+    font-size: 30px;
   }
 
   .header-hero-image{
@@ -672,6 +688,8 @@ cursor: pointer;
   .main-services-description-container{
     width: 60vw;
     border-left: solid var(--lightBlue);
+    padding-right: 20px;
+    margin-left: 20px
   }
 
   .footer-testimonial-quote{
