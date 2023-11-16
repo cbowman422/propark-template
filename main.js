@@ -1,4 +1,21 @@
 
+
+let navAbout = document.getElementById('nav-about');
+let navServices = document.getElementById('nav-services');
+let navParkingLocations = document.getElementById('nav-parking-locations');
+let navContact = document.getElementById('nav-contact');
+let navVisitPropark = document.getElementById('nav-visit-propark');
+
+let scrollAbout = document.getElementById('scrollAbout');
+let scrollServices = document.getElementById('scrollServices');
+let scrollContact = document.getElementById('scrollContact');
+
+
+navAbout.addEventListener('click',scrollAboutFunction);
+navServices.addEventListener('click',scrollServicesFunction);
+navContact.addEventListener('click',scrollContactFunction);
+
+
 let active = false;
 let mainServicesButton1 = document.getElementById('mainServicesButton1');
 let mainServicesButton2 = document.getElementById('mainServicesButton2');
@@ -7,6 +24,18 @@ let mainServicesButton3 = document.getElementById('mainServicesButton3');
 mainServicesButton1.addEventListener('click', updateServices1);
 mainServicesButton2.addEventListener('click', updateServices2);
 mainServicesButton3.addEventListener('click', updateServices3);
+
+function scrollAboutFunction(){
+  scrollAbout.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollServicesFunction(){
+  scrollServices.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollContactFunction(){
+  scrollContact.scrollIntoView({ behavior: 'smooth' });
+}
 
 
 function toggleMenu(){

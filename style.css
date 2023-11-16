@@ -15,7 +15,7 @@
 }
 
 body {
- margin: 0;
+ margin: 50px 0 0 0;
  font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,6 +23,22 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+#scrollAbout{
+  scroll-margin-top: 50px;
+  /* scroll-snap-margin-top: 50px; */
+}
+
+#scrollServices{
+  scroll-margin-top: 50px;
+  /* scroll-snap-margin-top: 50px; */
+}
+
+#scrollContact{
+  scroll-margin-top: 50px;
+  /* scroll-snap-margin-top: 50px; */
+}
+
 
 /* ------ Header Nav Item ------- */
 .header-nav{
@@ -117,7 +133,6 @@ body {
 
 
 .header-hero{
-  padding-top: 50px; 
   border: solid green;
   display: flex;  
   flex-direction: column;
@@ -158,6 +173,10 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+
+.main-acquisition-logo-pair img{
+  width: 20vw;
 }
 
 .main-acquisition-text{
@@ -455,6 +474,10 @@ body {
    
    .main-acquisition-logo-pair{
      width: 50vw;
+   }
+
+   .main-acquisition-logo-pair img{
+    width: 200px;
    }
    
    .main-acquisition-text{
