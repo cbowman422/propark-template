@@ -135,7 +135,7 @@ body {
 
 
 .header-hero{
-  border: solid green;
+  /* border: solid green; */
   display: flex;  
   flex-direction: column;
   background-color: var(--lightBlueBackground);
@@ -157,7 +157,7 @@ body {
 }
 
 .header-hero-image{
-  border: solid blue;
+  /* border: solid blue; */
   width: 100%;
 }
 
@@ -166,13 +166,13 @@ body {
 /* ------- Main Acquisitions -------- */
 
 .main-acquisition{
- border: solid pink;
+ /* border: solid pink; */
  display: flex;
  flex-direction: column;
 }
 
 .main-acquisition-logo-pair{
-  border: solid green;
+  /* border: solid green; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -185,7 +185,7 @@ body {
 }
 
 .main-acquisition-text{
- border: solid blue;
+ /* border: solid blue; */
  width: 100%;
 }
 
@@ -205,10 +205,11 @@ body {
 /* -------- Main Testimonial --------- */
 
 .main-testimonial{
-  border: solid orange;
+  /* border: solid orange; */
   background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
+  padding-bottom: 1px;
 }
 
 .main-testimonial-stars{
@@ -218,7 +219,7 @@ body {
 }
 
 .main-testimonial-quote{
-  border: solid purple;
+  /* border: solid purple; */
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -231,7 +232,7 @@ body {
 } 
 
 .main-testimonial-quote-reference{
-  border: solid yellow;
+  /* border: solid yellow; */
   text-align: center;
   color: var(--white);
   margin: 10px 0 20px 0;
@@ -249,14 +250,14 @@ body {
 }
 
 .main-about{
-  border: solid green;
+  /* border: solid green; */
   display: flex;
   flex-direction: column;
 
 }
 
 .main-about-text{
-  border: solid pink;
+  /* border: solid pink; */
   width: 100%;
 }
 
@@ -292,12 +293,12 @@ body {
 
 /* ----- Main Services ------ */
 
-.main-services{
+/* .main-services{
   border: solid aqua;
-}
+} */
 
 .main-services-title{
-  border: solid red;
+  /* border: solid red; */
   text-align: center;
 }
 
@@ -306,7 +307,7 @@ body {
 }
 
 .main-services-content{
-  border: solid blue;
+  /* border: solid blue; */
   display: flex;
   flex-direction: column-reverse;
 }
@@ -339,12 +340,12 @@ body {
 
 .main-services-description-container{
   width: 100%;
-  border: solid brown;
+  /* border: solid brown; */
   text-align: center;
 }
 
 .main-services-description{
-  border: solid orange;
+  /* border: solid orange; */
   padding: 20px;
 }
 
@@ -353,14 +354,17 @@ body {
   height: 100px;
   width: 100px;
   padding: 10px;
+  transition: var(--transition);
 }
 
 .main-services-description h2{
   color: var(--black);
+  transition: var(--transition);
 }
 
 .main-services-description p{
   color: var(--black);
+  transition: var(--transition);
 }
 
 .main-services-connect{
@@ -382,19 +386,20 @@ body {
 
 /* ----- Main Locations ------ */
 
-.main-locations{
+/* .main-locations{
   border: solid red;
-}
+} */
 
 
 
 /* -------- Footer Testimonial --------- */
 
 .footer-testimonial{
-  border: solid orange;
+  /* border: solid orange; */
   background-image: linear-gradient(var(--lightBlueTransparent),var(--lightBlueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
+  padding-bottom: 1px;
 }
 
 .footer-testimonial-stars{
@@ -404,7 +409,7 @@ body {
 }
 
 .footer-testimonial-quote{
-  border: solid purple;
+  /* border: solid purple; */
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -417,7 +422,7 @@ body {
 } 
 
 .footer-testimonial-quote-reference{
-  border: solid yellow;
+  /* border: solid yellow; */
   text-align: center;
   color: var(--white);
   margin: 10px 0 20px 0;
@@ -430,10 +435,10 @@ body {
 
 
 /* ---- Footer Blogs ----- */
-
+/* 
 .footer-blog{
   border: solid;
-}
+} */
 
 .footer-blog-title{
   text-align: center;
@@ -444,14 +449,14 @@ body {
 }
 
 .footer-all-blog-container{
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   overflow-x: scroll;
   width: 100%;
 }
 
 .footer-blog-container{
-  border: solid blue;
+  /* border: solid blue; */
   min-width: 250px;
   margin: 20px;
   border-radius: 10px;
@@ -492,11 +497,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: solid red;
+  /* border: solid red; */
 }
 
 .footer-info-top{
-  border: solid green;
+  /* border: solid green; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -509,6 +514,7 @@ body {
  color: var(--lightBlueFooter);
  margin-bottom: 0;
  margin-top: 40px;
+ padding: 0 20px;
 }
 
 .footer-info-top a{
@@ -517,7 +523,7 @@ body {
  }
 
 .footer-info-bottom{
-  border: solid orange;
+  /* border: solid orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;

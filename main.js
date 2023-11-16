@@ -79,10 +79,20 @@ function updateServices3(){
 updateServices1();
 
 function servicesInfo(servicesImage, servicesName, servicesText, mainButtonShadow, mainButtonShadowRemove1,mainButtonShadowRemove2 ){
-  document.getElementById("main-services-img").src = servicesImage;
-  document.getElementById("main-services-h3").innerHTML = servicesName;
-  document.getElementById("main-services-p").innerHTML = servicesText;
+ 
+  document.getElementById("main-services-img").style.opacity = 0;
+  document.getElementById("main-services-h3").style.opacity = 0;
+  document.getElementById("main-services-p").style.opacity = 0;
   document.getElementById(mainButtonShadow).style.boxShadow = "1px 2px 4px 1px var(--black)";
   document.getElementById(mainButtonShadowRemove1).style.boxShadow = "none";
   document.getElementById(mainButtonShadowRemove2).style.boxShadow = "none";
+
+  setTimeout(function(){
+    document.getElementById("main-services-img").src = servicesImage;
+    document.getElementById("main-services-h3").innerHTML = servicesName;
+    document.getElementById("main-services-p").innerHTML = servicesText;
+    document.getElementById("main-services-img").style.opacity = 1;
+    document.getElementById("main-services-h3").style.opacity = 1;
+    document.getElementById("main-services-p").style.opacity = 1;
+ }, 300);
 }
