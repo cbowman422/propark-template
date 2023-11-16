@@ -9,6 +9,7 @@
   --blue: #032682;
   --blueTransparent: rgba(3,38,130,0.8);
   --lightBlue: #BCCDFB;
+  --lightBlueLink:#0865D2;
   --lightBlueTransparent: rgba(112,141,216,0.8);
   --lightBlueBackground: #FBFCFF;
   --transition: all 0.25s ease-in-out;
@@ -146,10 +147,12 @@ body {
 .header-hero-text h2{
   font-weight: 800;
   color: var(--blue);
+  margin: 40px 20px 20px 20px;
 }
 
 .header-hero-text h3{
   font-weight: 800;
+  margin: 0 20px 40px 20px;
 }
 
 .header-hero-image{
@@ -177,12 +180,24 @@ body {
 
 .main-acquisition-logo-pair img{
   width: 20vw;
+  padding: 20px;
 }
 
 .main-acquisition-text{
  border: solid blue;
  width: 100%;
 }
+
+.main-acquisition-text h3{
+  color: var(--blue);
+  margin: 20px;
+}
+
+.main-acquisition-text p{
+  color: var(--brack);
+  margin: 0 20px 20px 20px;
+}
+ 
 
 
 
@@ -198,7 +213,7 @@ body {
 .main-testimonial-stars{
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 .main-testimonial-quote{
@@ -209,10 +224,20 @@ body {
   color: var(--white);
 }
 
+.main-testimonial-quote h3{
+  padding: 0 20px;
+  margin: 0 0 20px 0;
+} 
+
 .main-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
   color: var(--white);
+  margin: 10px 0 20px 0;
+}
+
+.main-testimonial-quote-reference p{
+ margin: 0;
 }
 
 
@@ -260,6 +285,7 @@ body {
 .main-about-image img{
   margin: auto;
   border-radius: 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 
@@ -300,10 +326,11 @@ body {
 }
 
 .main-services-button{
-  border: solid sandybrown;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  margin: 20px;
+  padding-left: 10px;
 }
 
 .main-services-button h3{
@@ -324,10 +351,11 @@ body {
 .main-services-description img{
   border-radius: 100%;
   height: 100px;
-  width: 100px
+  width: 100px;
+  padding: 10px;
 }
 
-.main-services-description h3{
+.main-services-description h2{
   color: var(--black);
 }
 
@@ -340,7 +368,15 @@ body {
 }
 
 .main-services-connect h3{
-  margin: 0;
+  margin: 0 0 10px 0;
+}
+
+.main-services-connect a{
+  background-color: var(--blue);
+  padding: 6px 16px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 100px;
 }
 
 
@@ -364,7 +400,7 @@ body {
 .footer-testimonial-stars{
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 .footer-testimonial-quote{
@@ -375,10 +411,20 @@ body {
   color: var(--white);
 }
 
+.footer-testimonial-quote h3{
+  padding: 0 20px;
+  margin: 0 0 20px 0;
+} 
+
 .footer-testimonial-quote-reference{
   border: solid yellow;
   text-align: center;
   color: var(--white);
+  margin: 10px 0 20px 0;
+}
+
+.footer-testimonial-quote-reference p{
+ margin: 0;
 }
 
 
@@ -407,6 +453,24 @@ body {
 .footer-blog-container{
   border: solid blue;
   min-width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.footer-blog-container img{
+ width: 250px;
+}
+
+.footer-blog-container p{
+  color: var(--black);
+  padding: 10px;
+}
+
+.footer-blog-container a{
+  color: var(--lightBlueLink);
+  margin: 10px;
 }
 
 /* ----- Contact Us ----- */
@@ -477,7 +541,7 @@ body {
    }
 
    .main-acquisition-logo-pair img{
-    width: 200px;
+    width: 150px;
    }
    
    .main-acquisition-text{

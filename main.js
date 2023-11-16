@@ -10,11 +10,9 @@ let scrollAbout = document.getElementById('scrollAbout');
 let scrollServices = document.getElementById('scrollServices');
 let scrollContact = document.getElementById('scrollContact');
 
-
 navAbout.addEventListener('click',scrollAboutFunction);
 navServices.addEventListener('click',scrollServicesFunction);
 navContact.addEventListener('click',scrollContactFunction);
-
 
 let active = false;
 let mainServicesButton1 = document.getElementById('mainServicesButton1');
@@ -84,7 +82,7 @@ function servicesInfo(servicesImage, servicesName, servicesText, mainButtonShado
   document.getElementById("main-services-img").src = servicesImage;
   document.getElementById("main-services-h3").innerHTML = servicesName;
   document.getElementById("main-services-p").innerHTML = servicesText;
-  document.getElementById(mainButtonShadow).style.boxShadow = "2px 2px 2px 1px";
+  document.getElementById(mainButtonShadow).style.boxShadow = "1px 2px 4px 1px var(--black)";
   document.getElementById(mainButtonShadowRemove1).style.boxShadow = "none";
   document.getElementById(mainButtonShadowRemove2).style.boxShadow = "none";
 }
