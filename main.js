@@ -27,32 +27,27 @@ mainServicesButton3.addEventListener('click', updateServices3);
 
 function scrollAboutFunction(){
   scrollAbout.scrollIntoView({ behavior: 'smooth' });
-
-  let menu = document.getElementById('menu');
-  let hamburger = document.getElementById('hamburger');
-  menu.classList.remove('active');
-  hamburger.classList.remove('active');
+  toggleScroll();
   
 }
 
 function scrollServicesFunction(){
   scrollServices.scrollIntoView({ behavior: 'smooth' });
-
-  let menu = document.getElementById('menu');
-  let hamburger = document.getElementById('hamburger');
-  menu.classList.remove('active');
-  hamburger.classList.remove('active');
+  toggleScroll();
   
 }
 
 function scrollContactFunction(){
   scrollContact.scrollIntoView({ behavior: 'smooth' });
+  toggleScroll();
   
+}
+
+function toggleScroll(){
   let menu = document.getElementById('menu');
   let hamburger = document.getElementById('hamburger');
   menu.classList.remove('active');
   hamburger.classList.remove('active');
-  
 }
 
 
