@@ -10,6 +10,7 @@
   --blueTransparent: rgba(3,38,130,0.8);
   --lightBlue: #BCCDFB;
   --lightBlueLink:#0865D2;
+  --lightBlueFooter: #708DD8;
   --lightBlueTransparent: rgba(112,141,216,0.8);
   --lightBlueBackground: #FBFCFF;
   --transition: all 0.25s ease-in-out;
@@ -283,9 +284,8 @@ body {
 }
 
 .main-about-image img{
-  margin: auto;
+  margin: 20px auto;
   border-radius: 20px;
-  padding: 20px 20px 40px 20px;
 }
 
 
@@ -322,7 +322,7 @@ body {
 }
 
 .main-services-button-container h3{
- padding: 5px 0 5px 20px;
+ padding: 5px 10px 5px 20px;
 }
 
 .main-services-button{
@@ -368,7 +368,7 @@ body {
 }
 
 .main-services-connect h3{
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 .main-services-connect a{
@@ -501,97 +501,44 @@ body {
   display: flex;
   justify-content: center;
   background-color: var(--lightBlueBackground);
+  flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .footer-info-top h3{
- color: var(--blue);
+ color: var(--lightBlueFooter);
+ margin-bottom: 0;
+ margin-top: 40px;
 }
+
+.footer-info-top a{
+  color: var(--blue);
+  font-weight: bolder;
+ }
 
 .footer-info-bottom{
   border: solid orange;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-info-bottom img{
+  width: 20vw;
+  margin: 10px;
+}
+
+.footer-info-bottom a{
+  margin: 10px;
+  color: var(--black);
 }
 
 
 /* ----- Media queries ----- */
 
 @media all and (min-width: 800px) {
-
-
-  .header-hero{
-    flex-direction: row; 
-  }
-
-  .header-hero-text{
-    width: 50vw;
-    padding: 40px;
-  }
-
-  .header-hero-image{
-    width: 50vw;
-  }
-
-  .main-acquisition{
-    flex-direction: row;
-   }
-   
-   .main-acquisition-logo-pair{
-     width: 50vw;
-   }
-
-   .main-acquisition-logo-pair img{
-    width: 150px;
-   }
-   
-   .main-acquisition-text{
-    width: 50vw;
-   }
-
-   .main-testimonial-quote{
-    width: 50vw;
-   }
-
-   .main-about{
-    flex-direction: row;
-   }
-  
-  .main-about-text{
-    width: 55vw;
-  }
-  
-  .main-about-image{
-    width: 45vw;
-  }
-
-
-  .main-services-content{
-    flex-direction: row;
-  }
-
-  .main-services-button-container{
-    width: 40vw;
-  }
-
-  .main-services-description-container{
-    width: 60vw;
-  }
-
-  .footer-testimonial-quote{
-    width: 50vw;
-  }
-
-  .footer-info-top{
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-info-bottom{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-
 
   .header-header img{
     margin-left: 40px;
@@ -617,6 +564,120 @@ body {
   
    .hamburger {
     display: none;
+  }
+
+  .header-hero{
+    flex-direction: row; 
+  }
+
+  .header-hero-text{
+    width: 50vw;
+  }
+
+  .header-hero-text h2{
+    margin: 40px 40px 20px 40px;
+  }
+  
+  .header-hero-text h3{
+    margin: 0 40px 40px 40px;
+  }
+
+  .header-hero-image{
+    width: 50vw;
+  }
+
+  .main-acquisition{
+    flex-direction: row;
+   }
+   
+   .main-acquisition-logo-pair{
+     width: 50vw;
+   }
+
+   .main-acquisition-logo-pair img{
+    width: 150px;
+   }
+   
+   .main-acquisition-text{
+    width: 50vw;
+   }
+
+   .main-acquisition-text h3{
+    margin: 20px 40px 20px 20px;
+  }
+  
+  .main-acquisition-text p{
+    margin: 0 40px 20px 20px;
+  }
+
+   .main-testimonial-quote{
+    width: 50vw;
+   }
+
+   .main-about{
+    flex-direction: row;
+   }
+  
+  .main-about-text{
+    width: 55vw;
+  }
+
+  .main-about-text h3{
+    color: var(--blue);
+    padding: 20px 40px;
+  }
+  
+  .main-about-text p{
+    color: var(--black);
+    padding: 0 40px;
+  }  
+
+  .main-about-underline{
+    margin-left: 40px;
+  }
+  
+  .main-about-image{
+    width: 45vw;
+  }
+
+  .main-services-content{
+    flex-direction: row;
+    padding: 0 80px;
+    margin-bottom: 20px;
+  }
+
+  .main-services-button-container{
+    width: 40vw;
+  }
+
+  .main-services-description-container{
+    width: 60vw;
+    border-left: solid var(--lightBlue);
+  }
+
+  .footer-testimonial-quote{
+    width: 50vw;
+  }
+
+  .footer-info-top{
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-info-bottom{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-info-bottom a{
+    margin: 10px;
+    color: var(--black);
+  }
+
+  .footer-info-bottom img{
+    width: 10vw;
+    margin: 10px 40px;
   }
 
 }
