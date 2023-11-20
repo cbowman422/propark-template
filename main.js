@@ -83,7 +83,7 @@ function servicesInfo(servicesImage, servicesName, servicesText, mainButtonShado
   document.getElementById("main-services-img").style.opacity = 0;
   document.getElementById("main-services-h3").style.opacity = 0;
   document.getElementById("main-services-p").style.opacity = 0;
-  document.getElementById(mainButtonShadow).style.boxShadow = "1px 2px 4px 1px var(--black)";
+  document.getElementById(mainButtonShadow).style.boxShadow = "1px 2px 4px 1px var(--gray)";
   document.getElementById(mainButtonShadowRemove1).style.boxShadow = "none";
   document.getElementById(mainButtonShadowRemove2).style.boxShadow = "none";
 

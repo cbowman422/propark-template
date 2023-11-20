@@ -7,6 +7,7 @@
   --black: #333333;
   --white: #ffffff;
   --blue: #032682;
+  --gray: #BABABA;
   --blueTransparent: rgba(3,38,130,0.8);
   --lightBlue: #BCCDFB;
   --lightBlueLink:#0865D2;
@@ -89,7 +90,7 @@ cursor: pointer;
 }
 
 .nav-item{
- padding: 10px 20px;
+ padding: 20px;
  opacity: 1;
  background-color: var(--lightBlueBackground);
  display: flex; 
@@ -151,17 +152,19 @@ cursor: pointer;
   width: 100%;
 }
 
-.header-hero-text h2{
+.header-hero-text h1{
   font-weight: 800;
   color: var(--blue);
   margin: 40px 20px 20px 20px;
   font-size: 36px;
 }
 
-.header-hero-text h3{
+.header-hero-text span{
   font-weight: 800;
-  margin: 0 20px 40px 20px;
+  margin: 20px 20px 40px 0;
   font-size: 26px;
+  color: var(--black);
+  display: block;
 }
 
 .header-hero-image{
@@ -271,7 +274,7 @@ cursor: pointer;
   width: 100%;
 }
 
-.main-about-text h3{
+.main-about-text h2{
   color: var(--blue);
   padding: 20px;
 }
@@ -312,7 +315,7 @@ cursor: pointer;
   text-align: center;
 }
 
-.main-services-title h3{
+.main-services-title h2{
   color: var(--blue);
   margin: 40px 0;
 }
@@ -448,14 +451,14 @@ cursor: pointer;
 /* ---- Footer Blogs ----- */
 
 .footer-blog{
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .footer-blog-title{
   text-align: center;
 }
 
-.footer-blog-title h3{
+.footer-blog-title h2{
   color: var(--blue);
   margin-bottom: 30px;
 }
@@ -474,7 +477,7 @@ cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 10px;
-  box-shadow: 1px 2px 4px 1px var(--black);
+  box-shadow: 1px 2px 4px 1px var(--gray);
 }
 
 .footer-blog-container img{
@@ -506,7 +509,7 @@ cursor: pointer;
   text-align: center;
 }
 
-.footer-contact h3{
+.footer-contact h2{
   color: var(--blue);
 }
 
@@ -561,7 +564,7 @@ cursor: pointer;
 
 .footer-info-bottom a{
   margin: 10px;
-  color: var(--black);
+  color: var(--gray);
 }
 
 
@@ -607,13 +610,13 @@ cursor: pointer;
    
   }
 
-  .header-hero-text h2{
+  .header-hero-text h1{
     margin: 40px 40px 20px 40px;
     font-size: 40px;
   }
   
-  .header-hero-text h3{
-    margin: 0 40px 40px 40px;
+  .header-hero-text span{
+    margin: 20px 40px 40px 0;
     font-size: 30px;
   }
 
@@ -657,7 +660,7 @@ cursor: pointer;
     width: 55vw;
   }
 
-  .main-about-text h3{
+  .main-about-text h2{
     color: var(--blue);
     padding: 20px 40px;
   }
@@ -705,11 +708,6 @@ cursor: pointer;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-  }
-
-  .footer-info-bottom a{
-    margin: 10px;
-    color: var(--black);
   }
 
   .footer-info-bottom img{
