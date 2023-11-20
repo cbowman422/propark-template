@@ -277,7 +277,7 @@ cursor: pointer;
 .main-about-text h2{
   color: var(--blue);
   padding: 20px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .main-about-text p{
@@ -290,6 +290,7 @@ cursor: pointer;
   height: 6px;
   background-color: var(--lightBlue);
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .main-about-image{
