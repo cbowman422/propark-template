@@ -4,6 +4,7 @@ let navAbout = document.getElementById('nav-about');
 let navServices = document.getElementById('nav-services');
 let navParkingLocations = document.getElementById('nav-parking-locations');
 let navContact = document.getElementById('nav-contact');
+let navContactServices = document.getElementById('nav-contact-services');
 let navVisitPropark = document.getElementById('nav-visit-propark');
 
 let scrollAbout = document.getElementById('scrollAbout');
@@ -13,6 +14,7 @@ let scrollContact = document.getElementById('scrollContact');
 navAbout.addEventListener('click',scrollAboutFunction);
 navServices.addEventListener('click',scrollServicesFunction);
 navContact.addEventListener('click',scrollContactFunction);
+navContactServices.addEventListener('click',scrollContactFunction);
 
 let active = false;
 let mainServicesButton1 = document.getElementById('mainServicesButton1');
