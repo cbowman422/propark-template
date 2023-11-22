@@ -1,5 +1,5 @@
 
-
+let navHome = document.getElementById('nav-home');
 let navAbout = document.getElementById('nav-about');
 let navServices = document.getElementById('nav-services');
 let navParkingLocations = document.getElementById('nav-parking-locations');
@@ -7,10 +7,12 @@ let navContact = document.getElementById('nav-contact');
 let navContactServices = document.getElementById('nav-contact-services');
 let navVisitPropark = document.getElementById('nav-visit-propark');
 
+let scrollHome = document.getElementById('scrollHome');
 let scrollAbout = document.getElementById('scrollAbout');
 let scrollServices = document.getElementById('scrollServices');
 let scrollContact = document.getElementById('scrollContact');
 
+navHome.addEventListener('click',scrollHomeFunction);
 navAbout.addEventListener('click',scrollAboutFunction);
 navServices.addEventListener('click',scrollServicesFunction);
 navContact.addEventListener('click',scrollContactFunction);
@@ -25,22 +27,24 @@ mainServicesButton1.addEventListener('click', updateServices1);
 mainServicesButton2.addEventListener('click', updateServices2);
 mainServicesButton3.addEventListener('click', updateServices3);
 
+function scrollHomeFunction(){
+  scrollHome.scrollIntoView({ behavior: 'smooth' });
+  toggleScroll();
+}
+
 function scrollAboutFunction(){
   scrollAbout.scrollIntoView({ behavior: 'smooth' });
   toggleScroll();
-  
 }
 
 function scrollServicesFunction(){
   scrollServices.scrollIntoView({ behavior: 'smooth' });
   toggleScroll();
-  
 }
 
 function scrollContactFunction(){
   scrollContact.scrollIntoView({ behavior: 'smooth' });
   toggleScroll();
-  
 }
 
 function toggleScroll(){
@@ -49,7 +53,6 @@ function toggleScroll(){
   menu.classList.remove('active');
   hamburger.classList.remove('active');
 }
-
 
 function toggleMenu(){
   active = !active;
@@ -81,14 +84,12 @@ function updateServices3(){
 updateServices1();
 
 function servicesInfo(servicesImage, servicesName, servicesText, mainButtonShadow, mainButtonShadowRemove1,mainButtonShadowRemove2 ){
- 
   document.getElementById("main-services-img").style.opacity = 0;
   document.getElementById("main-services-h3").style.opacity = 0;
   document.getElementById("main-services-p").style.opacity = 0;
   document.getElementById(mainButtonShadow).style.boxShadow = "1px 2px 4px 1px var(--gray)";
   document.getElementById(mainButtonShadowRemove1).style.boxShadow = "none";
   document.getElementById(mainButtonShadowRemove2).style.boxShadow = "none";
-
   setTimeout(function(){
     document.getElementById("main-services-img").src = servicesImage;
     document.getElementById("main-services-h3").innerHTML = servicesName;
