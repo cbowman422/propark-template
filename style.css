@@ -1,4 +1,3 @@
-/* width is at 1440 for figma */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -17,6 +16,7 @@
   --transition: all 0.25s ease-in-out;
 }
 
+
 body {
  margin: 50px 0 0 0;
  font-family: 'Montserrat', sans-serif;
@@ -25,6 +25,11 @@ body {
 .max-width{
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#scrollHome{
+  scroll-margin-top: 50px;
+  /* scroll-snap-margin-top: 50px; */
 }
 
 #scrollAbout{
@@ -46,8 +51,12 @@ a:hover{
 cursor: pointer;
 }
 
-/* ------ Header Nav Item ------- */
+/* ------ Header Nav Item ------- Temp margin top for WP development NAV --- */
 .header-nav{
+
+ margin-top: 46px;
+
+
  display: flex;
  position: fixed;
  top: 0;
@@ -69,6 +78,10 @@ cursor: pointer;
 .header-header img{
   height: 50px;
   margin-left: 20px;
+}
+
+.header-header img:hover{
+  cursor: pointer;
 }
 
 .header-nav-menu{
@@ -573,7 +586,11 @@ cursor: pointer;
 
 /* ----- Media queries ----- */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 783px) {
+
+  .header-nav{
+    margin-top: 32px;
+  }
 
   .header-header img{
     margin-left: 40px;
@@ -683,7 +700,7 @@ cursor: pointer;
 
   .main-services-content{
     flex-direction: row;
-    padding: 0 80px;
+    padding: 0 20px;
     margin-bottom: 40px;
   }
 
@@ -716,6 +733,15 @@ cursor: pointer;
   .footer-info-bottom img{
     width: 10vw;
     margin: 10px 40px;
+  }
+
+}
+
+
+@media all and (min-width: 900px) {
+
+  .main-services-content{
+    padding: 0 80px;
   }
 
 }
