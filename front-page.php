@@ -55,10 +55,10 @@
 
   <div class="main-testimonial">
     <div class="main-testimonial-stars">
-    <?php
-      $testimonial_star_id = get_field('testimonial_star');
-      $main_testimonial_background_img_id = get_field('main_testimonial_background_img');
-    ?>
+      <?php
+        $testimonial_star_id = get_field('testimonial_star');
+        $main_testimonial_background_img_id = get_field('main_testimonial_background_img');
+      ?>
       <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
       alt="<?php echo esc_attr($testimonial_star_id['alt']); ?>" >
       <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
@@ -256,6 +256,9 @@
     </div> -->
 
     <div class="footer-testimonial">
+      <?php
+        $footer_testimonial_background_img_id = get_field('footer_testimonial_background_img');
+      ?>
       <div class="footer-testimonial-stars">
         <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
         alt="<?php echo esc_attr($testimonial_star_id['alt']); ?>" >
@@ -269,17 +272,41 @@
         alt="<?php echo esc_attr($testimonial_star_id['alt']); ?>" >
       </div>
       <div class="footer-testimonial-quote">
-        <h3>“Best parking experience ever!”</h3>
+        <h3>
+          <?php 
+            the_field('footer_testimonial_quote'); 
+          ?>
+        </h3>
       </div>
       <div class="footer-testimonial-quote-reference">
-        <p> - Everyone </p>
-        <p> Everywhere, USA </p>
+        <p> 
+          <?php 
+            the_field('footer_testimonial_reference'); 
+          ?>
+        </p>
+        <p>
+          <?php 
+            the_field('footer_testimonial_reference_location'); 
+          ?>
+        </p>
       </div>
     </div>
+    <style>
+      .footer-testimonial{
+      background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("<?php echo esc_url($footer_testimonial_background_img_id['url']); ?>");
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+      }
+    </style>
 
     <div class="footer-blog max-width">
       <div class="footer-blog-title">
-        <h2> Latest on the Blog </h2>
+        <h2>
+          <?php 
+            the_field('footer_blog_title_h2'); 
+          ?>
+        </h2>
       </div>
       <div class="footer-all-blog-container">
         <div class="footer-blog-container">
@@ -328,6 +355,14 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="footer-contact" id="scrollContact">
+      <h2> 
+        <?php 
+          the_field('footer_contact_h2'); 
+        ?>
+      </h2>
     </div>
 
 </main>
