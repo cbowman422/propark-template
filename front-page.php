@@ -255,11 +255,11 @@
       </div>
     </div> -->
 
-    <div class="footer-testimonial">
+    <div class="second-testimonial">
       <?php
-        $footer_testimonial_background_img_id = get_field('footer_testimonial_background_img');
+        $second_testimonial_background_img_id = get_field('second_testimonial_background_img');
       ?>
-      <div class="footer-testimonial-stars">
+      <div class="second-testimonial-stars">
         <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
         alt="<?php echo esc_attr($testimonial_star_id['alt']); ?>" >
         <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
@@ -271,85 +271,85 @@
         <img src="<?php echo esc_url($testimonial_star_id['url']); ?>" 
         alt="<?php echo esc_attr($testimonial_star_id['alt']); ?>" >
       </div>
-      <div class="footer-testimonial-quote">
+      <div class="second-testimonial-quote">
         <h3>
           <?php 
-            the_field('footer_testimonial_quote'); 
+            the_field('second_testimonial_quote'); 
           ?>
         </h3>
       </div>
-      <div class="footer-testimonial-quote-reference">
+      <div class="second-testimonial-quote-reference">
         <p> 
           <?php 
-            the_field('footer_testimonial_reference'); 
+            the_field('second_testimonial_reference'); 
           ?>
         </p>
         <p>
           <?php 
-            the_field('footer_testimonial_reference_location'); 
+            the_field('second_testimonial_reference_location'); 
           ?>
         </p>
       </div>
     </div>
     <style>
-      .footer-testimonial{
-      background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("<?php echo esc_url($footer_testimonial_background_img_id['url']); ?>");
+      .second-testimonial{
+      background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("<?php echo esc_url($second_testimonial_background_img_id['url']); ?>");
       background-size: cover;
       background-position: center;
       padding: 60px 0;
       }
     </style>
 
-    <div class="footer-blog max-width">
-      <div class="footer-blog-title">
+    <div class="main-blog max-width">
+      <div class="main-blog-title">
         <h2>
           <?php 
-            the_field('footer_blog_title_h2'); 
+            the_field('main_blog_title_h2'); 
           ?>
         </h2>
       </div>
-      <div class="footer-all-blog-container">
-        <div class="footer-blog-container">
+      <div class="main-all-blog-container">
+        <div class="main-blog-container">
           <div>
             <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
           </div>
-          <div class="footer-blog-container-text-flex">
+          <div class="main-blog-container-text-flex">
             <p> Title of Content Here Continued onto Three Lines for Example </p>
             <a href="/"> Read Blog Post </a>
           </div>
         </div>
-        <div class="footer-blog-container">
+        <div class="main-blog-container">
           <div>
             <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
           </div>
-          <div class="footer-blog-container-text-flex">
+          <div class="main-blog-container-text-flex">
             <p> blog discription text </p>
             <a href="/"> Read Blog Post </a>
           </div>
         </div>
-        <div class="footer-blog-container">
+        <div class="main-blog-container">
           <div>
             <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
           </div>
-          <div class="footer-blog-container-text-flex">
+          <div class="main-blog-container-text-flex">
             <p> blog discription text log discription text  </p>
             <a href="/"> Read Blog Post </a>
           </div>
         </div>
-        <div class="footer-blog-container">
+        <div class="main-blog-container">
           <div>
             <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
           </div>
-          <div class="footer-blog-container-text-flex">
+          <div class="main-blog-container-text-flex">
             <p> blog discription text </p>
             <a href="/"> Read Blog Post </a>
           </div>
         </div>
-        <div class="footer-blog-container">
+        <div class="main-blog-container">
           <div>
             <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
           </div>
-          <div class="footer-blog-container-text-flex">
+          <div class="main-blog-container-text-flex">
             <p> blog discription text </p>
             <a href="/"> Read Blog Post </a>
           </div>
@@ -357,10 +357,10 @@
       </div>
     </div>
 
-    <div class="footer-contact" id="scrollContact">
+    <div class="main-contact" id="scrollContact">
       <h2> 
         <?php 
-          the_field('footer_contact_h2'); 
+          the_field('main_contact_h2'); 
         ?>
       </h2>
     </div>

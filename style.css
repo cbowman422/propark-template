@@ -1,3 +1,13 @@
+/* 
+Theme Name: Propark Acquisitions
+Text Domain: ProparkAcquisitions
+Version: 1.0
+Description: Custom Theme for Propark Acquisitons
+Tags: Propark
+Author: Christopher Bowman
+Author URI: https://christopher-bowman.netlify.app/
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -229,18 +239,22 @@ cursor: pointer;
 
 /* -------- Main Testimonial --------- */
 
-.main-testimonial{
-  /* border: solid orange; */
+/* .main-testimonial{
   background-image: linear-gradient(var(--blueTransparent),var(--blueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
   padding: 60px 0;
-}
+} */
 
 .main-testimonial-stars{
   display: flex;
   justify-content: center;
   padding: 20px 0px;
+}
+
+.main-testimonial-stars img{
+  padding: 0px 6px;
+  width: 26px;
 }
 
 .main-testimonial-quote{
@@ -315,6 +329,7 @@ cursor: pointer;
 .main-about-image img{
   margin: 20px auto;
   border-radius: 20px;
+  max-width: 300px;
 }
 
 
@@ -422,23 +437,27 @@ cursor: pointer;
 
 
 
-/* -------- Footer Testimonial --------- */
+/* -------- Second Testimonial --------- */
 
-.footer-testimonial{
-  /* border: solid orange; */
+/* .second-testimonial{
   background-image: linear-gradient(var(--lightBlueTransparent),var(--lightBlueTransparent)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU");
   background-size: cover;
   background-position: center;
   padding: 60px 0;
-}
+} */
 
-.footer-testimonial-stars{
+.second-testimonial-stars{
   display: flex;
   justify-content: center;
   padding: 20px 0px;
 }
 
-.footer-testimonial-quote{
+.second-testimonial-stars img{
+  padding: 0px 6px;
+  width: 26px;
+}
+
+.second-testimonial-quote{
   /* border: solid purple; */
   width: 100%;
   margin: 0 auto;
@@ -446,47 +465,47 @@ cursor: pointer;
   color: var(--white);
 }
 
-.footer-testimonial-quote h3{
+.second-testimonial-quote h3{
   padding: 0 20px;
   margin: 0 0 20px 0;
 } 
 
-.footer-testimonial-quote-reference{
+.second-testimonial-quote-reference{
   /* border: solid yellow; */
   text-align: center;
   color: var(--white);
   margin: 10px 0 20px 0;
 }
 
-.footer-testimonial-quote-reference p{
+.second-testimonial-quote-reference p{
  margin: 0;
 }
 
 
 
-/* ---- Footer Blogs ----- */
+/* ---- Main Blogs ----- */
 
-.footer-blog{
+.main-blog{
   padding: 50px 20px 20px 20px;
 }
 
-.footer-blog-title{
+.main-blog-title{
   text-align: center;
 }
 
-.footer-blog-title h2{
+.main-blog-title h2{
   color: var(--blue);
   margin-bottom: 46px;
 }
 
-.footer-all-blog-container{
+.main-all-blog-container{
   /* border: solid red; */
   display: flex;
   overflow-x: scroll;
   width: 100%;
 }
 
-.footer-blog-container{
+.main-blog-container{
   /* border: solid blue; */
   min-width: 250px;
   margin: 20px;
@@ -496,36 +515,36 @@ cursor: pointer;
   box-shadow: 1px 2px 4px 1px var(--gray);
 }
 
-.footer-blog-container img{
+.main-blog-container img{
  width: 250px;
 }
 
-.footer-blog-container-text-flex{
+.main-blog-container-text-flex{
   display: flex;
   flex-direction: column;
   height: 40%;
   justify-content: space-between;
 }
 
-.footer-blog-container p{
+.main-blog-container p{
   color: var(--black);
   padding: 10px;
   margin: 10px 0 0 0;
 }
 
-.footer-blog-container a{
+.main-blog-container a{
   color: var(--lightBlueLink);
   margin: 10px;
 }
 
 /* ----- Contact Us ----- */
 
-.footer-contact{
+.main-contact{
   padding: 40px 0;
   text-align: center;
 }
 
-.footer-contact h2{
+.main-contact h2{
   color: var(--blue);
 }
 
@@ -632,16 +651,18 @@ cursor: pointer;
 
   .header-hero-text h1{
     margin: 40px 40px 20px 40px;
-    font-size: 40px;
+    font-size: 34px;
   }
   
   .header-hero-text span{
     margin: 20px 40px 40px 0;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .header-hero-image{
-    width: 50vw;
+      width: 50vw;
+    max-width: 600px;
+      object-fit: cover;
   }
 
   .main-acquisition{
@@ -715,7 +736,7 @@ cursor: pointer;
     margin-left: 20px
   }
 
-  .footer-testimonial-quote{
+  .second-testimonial-quote{
     width: 50vw;
   }
 
@@ -739,6 +760,14 @@ cursor: pointer;
 
 
 @media all and (min-width: 900px) {
+
+  .header-hero-text h1{
+    font-size: 40px;
+  }
+  
+  .header-hero-text span{
+    font-size: 30px;
+  }
 
   .main-services-content{
     padding: 0 80px;
