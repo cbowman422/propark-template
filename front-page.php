@@ -301,60 +301,30 @@
     </style>
 
     <div class="main-blog max-width">
-      <div class="main-blog-title">
-        <h2>
-          <?php 
-            the_field('main_blog_title_h2'); 
-          ?>
-        </h2>
-      </div>
-      <div class="main-all-blog-container">
-        <div class="main-blog-container">
-          <div>
-            <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
-          </div>
-          <div class="main-blog-container-text-flex">
-            <p> Title of Content Here Continued onto Three Lines for Example </p>
-            <a href="/"> Read Blog Post </a>
-          </div>
+        <div class="main-blog-title">
+          <h2>
+            <?php 
+              the_field('main_blog_title_h2'); 
+            ?>
+          </h2>
         </div>
-        <div class="main-blog-container">
-          <div>
-            <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
-          </div>
-          <div class="main-blog-container-text-flex">
-            <p> blog discription text </p>
-            <a href="/"> Read Blog Post </a>
-          </div>
-        </div>
-        <div class="main-blog-container">
-          <div>
-            <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
-          </div>
-          <div class="main-blog-container-text-flex">
-            <p> blog discription text log discription text  </p>
-            <a href="/"> Read Blog Post </a>
-          </div>
-        </div>
-        <div class="main-blog-container">
-          <div>
-            <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
-          </div>
-          <div class="main-blog-container-text-flex">
-            <p> blog discription text </p>
-            <a href="/"> Read Blog Post </a>
-          </div>
-        </div>
-        <div class="main-blog-container">
-          <div>
-            <img alt="Blog Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuLh5RyUR6FDYZi9MQeD7RoQfU90cY67quA&usqp=CAU"/>
-          </div>
-          <div class="main-blog-container-text-flex">
-            <p> blog discription text </p>
-            <a href="/"> Read Blog Post </a>
-          </div>
-        </div>
-      </div>
+        <?php
+        $rss_feed = fetch_feed('https://www.propark.com/feed/');
+        if (!is_wp_error($rss_feed)) {
+        echo '<div class="main-all-blog-container" >';
+        foreach ($rss_feed->get_items(0, 10) as $item) {
+            $enclosure = $item->get_enclosure();
+            $enc_url = $enclosure ? $enclosure->get_link() : 'No enclosure found';
+            $title = $item->get_title();
+            $title_link = $item->get_link();
+            
+            echo '<div class="main-blog-container"><a href="' . esc_url($title_link) . '">';
+            echo '<img src="' . esc_url($enc_url) . '" alt="Enclosure Image" />';
+            echo '<p>' . esc_html($title) . '</p></a></div>';
+        }
+        echo '</div>';
+        }
+        ?>
     </div>
 
     <div class="main-contact" id="scrollContact">
